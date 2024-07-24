@@ -1,0 +1,57 @@
+nav {
+  width: 92%;
+  max-width: 1328px;
+
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 8px 0px;
+
+  font-size: 14px;
+
+  display: flex;
+  justify-content: space-between;
+}
+.join-us {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+.join-us > img {
+  width: 18px;
+  height: 18px;
+}
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+.right {
+  display: flex;
+  gap: 12px;
+}
+button {
+  display: flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+
+  border-radius: 100px;
+  border: 1px solid #bc67ff;
+
+  background: rgba(112, 32, 184, 0.07);
+  box-shadow:
+    2px 2px 22px 0px rgba(185, 97, 255, 0.12),
+    -2px -2px 22px 0px rgba(185, 97, 255, 0.12);
+
+  color: white;
+  font-weight: 500;
+}
+button:hover {
+  cursor: pointer;
+  box-shadow:
+    2px 2px 4px 0px rgba(185, 97, 255, 0.36) inset,
+    -2px -2px 4px 0px rgba(185, 97, 255, 0.36) inset;
+}
