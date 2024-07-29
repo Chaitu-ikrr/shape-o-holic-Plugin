@@ -1,70 +1,18 @@
-"use client";
+import { CSSProperties } from "react";
 import "./TopLogo.css";
-import { useRef } from "react";
-import { gsap } from "gsap";
-import { useGSAP } from "@gsap/react";
 
-export default function TopLogo() {
-  const e1 = useRef<SVGEllipseElement>(null);
-  const e2 = useRef<SVGEllipseElement>(null);
-  const e3 = useRef<SVGEllipseElement>(null);
-  const e4 = useRef<SVGEllipseElement>(null);
-
-  useGSAP(() => {
-    const t1 = gsap.timeline();
-    t1.to(e1.current, {
-      cy: 128,
-      duration: 0.8,
-      delay: 0.1,
-      ease: "back.out",
-    }).repeat(-1);
-    t1.to(e1.current, { cy: 67, ease: "back.out" }).repeat(-1);
-
-    const t3 = gsap.timeline();
-    t3.to(e3.current, {
-      cx: 191.898,
-      cy: 51.257,
-      duration: 0.8,
-      delay: 0.1,
-      ease: "back.out",
-    }).repeat(-1);
-    t3.to(e3.current, {
-      cx: 22.6177,
-      cy: 70.5452,
-      ease: "back.out",
-    }).repeat(-1);
-
-    const t2 = gsap.timeline();
-    t2.to(e2.current, {
-      cx: 192.26,
-      cy: 27.1829,
-      duration: 0.8,
-      delay: 0.1,
-      ease: "back.out",
-    }).repeat(-1);
-    t2.to(e2.current, {
-      cx: 35.4111,
-      cy: 158.042,
-      ease: "back.out",
-    }).repeat(-1);
-
-    const t4 = gsap.timeline();
-    t4.to(e2.current, {
-      cx: 91.8105,
-      cy: 20.5421,
-      duration: 0.8,
-      delay: 0.1,
-      ease: "back.out",
-    }).repeat(-1);
-    t4.to(e2.current, {
-      cx: 63.062,
-      cy: 148.027,
-      ease: "back.out",
-    }).repeat(-1);
-  });
-
+export default function TopLogo({
+  className,
+  style,
+}: {
+  className?: string;
+  style?: CSSProperties;
+}) {
   return (
-    <div className="logo-container">
+    <div
+      className={"top-logo-container " + (className ? className : "")}
+      style={style}
+    >
       <svg
         className="svg-logo"
         width="200"
@@ -104,10 +52,8 @@ export default function TopLogo() {
             />
           </mask>
           <g mask="url(#mask0_4520_19270)">
-            {/* <g id="ellipse-1"> */}
             <g id="ellipse-1" filter="url(#filter0_f_4520_19270)">
               <ellipse
-                ref={e1}
                 cx="105.736"
                 cy="67.5462"
                 rx="78.32"
@@ -118,7 +64,6 @@ export default function TopLogo() {
             </g>
             <g id="ellipse-2" filter="url(#filter3_f_4520_19270)">
               <ellipse
-                ref={e2}
                 cx="192.26"
                 cy="27.1829"
                 rx="78.32"
@@ -129,7 +74,6 @@ export default function TopLogo() {
             </g>
             <g id="ellipse-3" filter="url(#filter1_f_4520_19270)">
               <ellipse
-                ref={e3}
                 cx="22.6177"
                 cy="70.5452"
                 rx="78.32"
@@ -140,7 +84,6 @@ export default function TopLogo() {
             </g>
             <g id="ellipse-4" filter="url(#filter2_f_4520_19270)">
               <ellipse
-                ref={e4}
                 cx="63.062"
                 cy="148.027"
                 rx="78.32"
@@ -159,9 +102,9 @@ export default function TopLogo() {
             width="269.52"
             height="268.64"
             filterUnits="userSpaceOnUse"
-            colorInterpolationFilters="sRGB"
+            color-interpolation-filters="sRGB"
           >
-            <feFlood floodOpacity="0" result="BackgroundImageFix" />
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
@@ -180,9 +123,9 @@ export default function TopLogo() {
             width="269.52"
             height="268.64"
             filterUnits="userSpaceOnUse"
-            colorInterpolationFilters="sRGB"
+            color-interpolation-filters="sRGB"
           >
-            <feFlood floodOpacity="0" result="BackgroundImageFix" />
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
@@ -201,9 +144,9 @@ export default function TopLogo() {
             width="269.52"
             height="268.64"
             filterUnits="userSpaceOnUse"
-            colorInterpolationFilters="sRGB"
+            color-interpolation-filters="sRGB"
           >
-            <feFlood floodOpacity="0" result="BackgroundImageFix" />
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
@@ -222,9 +165,9 @@ export default function TopLogo() {
             width="269.52"
             height="268.64"
             filterUnits="userSpaceOnUse"
-            colorInterpolationFilters="sRGB"
+            color-interpolation-filters="sRGB"
           >
-            <feFlood floodOpacity="0" result="BackgroundImageFix" />
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
@@ -234,6 +177,92 @@ export default function TopLogo() {
             <feGaussianBlur
               stdDeviation="28"
               result="effect1_foregroundBlur_4520_19270"
+            />
+          </filter>
+        </defs>
+      </svg>
+      <svg
+        id="star"
+        width="76"
+        height="69"
+        viewBox="0 0 76 69"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g filter="url(#filter0_dii_4520_19286)">
+          <path
+            d="M38 -5L41.0547 27.9453L74 31L41.0547 34.0547L38 67L34.9453 34.0547L2 31L34.9453 27.9453L38 -5Z"
+            fill="white"
+          />
+        </g>
+        <defs>
+          <filter
+            id="filter0_dii_4520_19286"
+            x="0"
+            y="-7"
+            width="76"
+            height="76"
+            filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB"
+          >
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feColorMatrix
+              in="SourceAlpha"
+              type="matrix"
+              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              result="hardAlpha"
+            />
+            <feOffset />
+            <feGaussianBlur stdDeviation="1" />
+            <feComposite in2="hardAlpha" operator="out" />
+            <feColorMatrix
+              type="matrix"
+              values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.34 0"
+            />
+            <feBlend
+              mode="normal"
+              in2="BackgroundImageFix"
+              result="effect1_dropShadow_4520_19286"
+            />
+            <feBlend
+              mode="normal"
+              in="SourceGraphic"
+              in2="effect1_dropShadow_4520_19286"
+              result="shape"
+            />
+            <feColorMatrix
+              in="SourceAlpha"
+              type="matrix"
+              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              result="hardAlpha"
+            />
+            <feOffset dx="0.5" dy="0.5" />
+            <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+            <feColorMatrix
+              type="matrix"
+              values="0 0 0 0 0.892301 0 0 0 0 0.892301 0 0 0 0 0.892301 0 0 0 1 0"
+            />
+            <feBlend
+              mode="normal"
+              in2="shape"
+              result="effect2_innerShadow_4520_19286"
+            />
+            <feColorMatrix
+              in="SourceAlpha"
+              type="matrix"
+              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              result="hardAlpha"
+            />
+            <feOffset dx="-0.1" dy="-0.2" />
+            <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+            <feColorMatrix
+              type="matrix"
+              values="0 0 0 0 0.894118 0 0 0 0 0.894118 0 0 0 0 0.894118 0 0 0 1 0"
+            />
+            <feBlend
+              mode="normal"
+              in2="effect2_innerShadow_4520_19286"
+              result="effect3_innerShadow_4520_19286"
             />
           </filter>
         </defs>

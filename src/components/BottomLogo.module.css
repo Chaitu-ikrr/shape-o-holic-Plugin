@@ -1,0 +1,160 @@
+.img,
+.svg {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+.chey,
+.sarda,
+.star,
+.bLogoContainer,
+.ddLogoName {
+  animation-delay: 1800ms;
+  animation-duration: 10.7s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.chey {
+  left: 35px;
+  top: -40px;
+  width: 100%;
+  scale: 0.28;
+  animation-name: chey;
+}
+.sarda {
+  left: -30px;
+  top: 35px;
+  width: 100%;
+  scale: 0.28;
+  animation-name: sarda;
+}
+.star {
+  position: absolute;
+  opacity: 0;
+  left: 60px;
+  top: -30px;
+  scale: 0.1;
+  animation-name: star;
+}
+.bLogoContainer {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  animation-name: logo-bottom;
+  scale: 0.5;
+}
+.ddLogoName {
+  opacity: 0;
+  left: 80px;
+  top: 20px;
+  animation-name: dd-logo-name;
+}
+@keyframes logo-bottom {
+  16% {
+    width: 200px;
+    height: 200px;
+  }
+  26% {
+    width: 118px;
+    height: 118px;
+  }
+  92.5% {
+    width: 118px;
+    height: 118px;
+  }
+  100% {
+    width: 200px;
+    height: 200px;
+  }
+}
+@keyframes sarda {
+  16% {
+    left: -30px;
+    top: 35px;
+    opacity: 1;
+  }
+  26% {
+    left: -20px;
+    top: 20px;
+    opacity: 0;
+  }
+  92.5% {
+    left: -20px;
+    top: 20px;
+    opacity: 0;
+  }
+  100% {
+    left: -30px;
+    top: 35px;
+    opacity: 1;
+  }
+}
+@keyframes chey {
+  16% {
+    left: 35px;
+    top: -40px;
+    opacity: 1;
+  }
+  26% {
+    left: 20px;
+    top: -25px;
+    opacity: 0;
+  }
+  92.5% {
+    left: 20px;
+    top: -25px;
+    opacity: 0;
+  }
+  100% {
+    left: 35px;
+    top: -40px;
+    opacity: 1;
+  }
+}
+@keyframes dd-logo-name {
+  18% {
+    opacity: 0;
+  }
+  26% {
+    opacity: 1;
+  }
+  92.5% {
+    opacity: 1;
+  }
+  93.5% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes star {
+  0% {
+    scale: 0.1;
+    opacity: 0;
+    transform: rotateZ(0deg);
+  }
+  26% {
+    scale: 0.1;
+    opacity: 0;
+    transform: rotateZ(0deg);
+  }
+  36.4% {
+    scale: 1;
+    opacity: 1;
+    transform: rotateZ(180deg);
+  }
+  92.5% {
+    scale: 1;
+    opacity: 1;
+    transform: rotateZ(180deg);
+  }
+  93.5% {
+    opacity: 0;
+  }
+  100% {
+    scale: 0.1;
+    opacity: 0;
+    transform: rotateZ(180deg);
+  }
+}

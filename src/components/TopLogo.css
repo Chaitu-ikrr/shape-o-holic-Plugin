@@ -1,8 +1,88 @@
-.logo-container {
+.top-logo-container {
   position: relative;
+  scale: 0.2;
 }
-.logo-container svg {
+.svg-logo,
+.svg-mask {
   position: absolute;
   top: 0px;
   left: 0px;
+}
+.animate #ellipse-1 {
+  animation-name: e1;
+  animation-duration: 800ms;
+  animation-delay: 50ms;
+  animation-iteration-count: infinite;
+}
+.animate #ellipse-2 {
+  animation-name: e2;
+  animation-duration: 800ms;
+  animation-delay: 50ms;
+  animation-iteration-count: infinite;
+}
+.animate #ellipse-3 {
+  animation-name: e3;
+  animation-duration: 800ms;
+  animation-delay: 50ms;
+  animation-iteration-count: infinite;
+}
+.animate #ellipse-4 {
+  animation-name: e4;
+  animation-duration: 800ms;
+  animation-delay: 50ms;
+  animation-iteration-count: infinite;
+}
+#star {
+  position: absolute;
+  left: 120px;
+  top: -30px;
+  scale: 0.1;
+}
+.animate #star {
+  animation-name: star;
+  animation-duration: 800ms;
+  animation-delay: 50ms;
+  animation-iteration-count: infinite;
+}
+
+@keyframes e1 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(-2px, 60px);
+  }
+}
+@keyframes e2 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(-157px, 87.49px);
+  }
+}
+@keyframes e3 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(159px, -19.28px);
+  }
+}
+@keyframes e4 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(28.7px, -128px);
+  }
+}
+@keyframes star {
+  0% {
+    scale: 0.1;
+  }
+  100% {
+    scale: 1;
+    transform: rotateZ(180deg);
+  }
 }

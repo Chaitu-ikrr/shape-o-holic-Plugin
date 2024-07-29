@@ -1,0 +1,63 @@
+.bLogoLineContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.logoContainer {
+  width: 120px;
+  height: 120px;
+  position: relative;
+}
+.logoWrapper {
+  margin-left: -35px;
+  margin-top: -50px;
+  animation-name: logo-wrapper-down;
+  animation-delay: 1800ms;
+  animation-duration: 10.7s;
+  animation-timing-function: linear;
+  /*animation-timing-function: ease-in-out;*/
+  /*animation-timing-function: cubic-bezier(0.47, 0, 0.23, 1.38);*/
+  animation-iteration-count: infinite;
+}
+.line1,
+.line2 {
+  height: 2px;
+  flex: 1 0 0;
+}
+.line1 {
+  border-radius: 20px;
+  background: linear-gradient(
+    90deg,
+    rgba(178, 93, 255, 0.43) 0%,
+    rgba(178, 93, 255, 0) 100%
+  );
+  transform: rotateZ(180deg);
+}
+.line2 {
+  border-radius: 20px;
+  background: linear-gradient(
+    90deg,
+    rgba(178, 93, 255, 0.43) 0%,
+    rgba(178, 93, 255, 0) 100%
+  );
+}
+@keyframes logo-wrapper-down {
+  16% {
+    padding-top: 0px;
+    padding-left: 0px;
+  }
+  26% {
+    padding-top: 42px;
+    padding-left: 35px;
+  }
+  92.4% {
+    padding-top: 42px;
+    padding-left: 35px;
+  }
+  100% {
+    padding-top: 0px;
+    padding-left: 0px;
+  }
+}
