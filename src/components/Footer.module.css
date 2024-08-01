@@ -6,19 +6,17 @@
   gap: 8px;
 }
 .logoContainer {
-  width: 120px;
-  height: 120px;
+  width: 110px;
+  height: 110px;
   position: relative;
 }
 .logoWrapper {
-  margin-left: -35px;
+  margin-left: -45px;
   margin-top: -50px;
   animation-name: logo-wrapper-down;
   animation-delay: 1800ms;
   animation-duration: 10.7s;
   animation-timing-function: linear;
-  /*animation-timing-function: ease-in-out;*/
-  /*animation-timing-function: cubic-bezier(0.47, 0, 0.23, 1.38);*/
   animation-iteration-count: infinite;
 }
 .line1,
