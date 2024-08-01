@@ -1,0 +1,28 @@
+.shapeContainer {
+  position: relative;
+  width: 366px;
+  height: 68px;
+}
+
+.shapeContainer svg {
+  position: absolute;
+}
+
+.shapeWhite {
+  top: 4px;
+  left: 2px;
+}
+
+.oHolicContainer {
+  position: relative;
+}
+
+.oHolicContainer svg {
+  margin-top: 26px;
+  position: absolute;
+}
+
+.oHolicWhite {
+  top: 5px;
+  left: 6px;
+}
