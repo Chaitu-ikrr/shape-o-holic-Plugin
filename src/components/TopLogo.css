@@ -10,25 +10,25 @@
 }
 .animate #ellipse-1 {
   animation-name: e1;
-  animation-duration: 800ms;
+  animation-duration: 1000ms;
   animation-delay: 50ms;
   animation-iteration-count: infinite;
 }
 .animate #ellipse-2 {
   animation-name: e2;
-  animation-duration: 800ms;
+  animation-duration: 1000ms;
   animation-delay: 50ms;
   animation-iteration-count: infinite;
 }
 .animate #ellipse-3 {
   animation-name: e3;
-  animation-duration: 800ms;
+  animation-duration: 1000ms;
   animation-delay: 50ms;
   animation-iteration-count: infinite;
 }
 .animate #ellipse-4 {
   animation-name: e4;
-  animation-duration: 800ms;
+  animation-duration: 1000ms;
   animation-delay: 50ms;
   animation-iteration-count: infinite;
 }
@@ -40,7 +40,7 @@
 }
 .animate #star {
   animation-name: star;
-  animation-duration: 800ms;
+  animation-duration: 1000ms;
   animation-delay: 50ms;
   animation-iteration-count: infinite;
 }
