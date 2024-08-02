@@ -1,4 +1,5 @@
 "use client";
+import { useEffect, useState } from "react";
 import styles from "./ShapeOHolicSvg.module.css";
 import { motion, Transition } from "framer-motion";
 
@@ -221,6 +222,33 @@ export default function ShapeOHolicSvg() {
           />
         </svg>
       </div>
+      <Emoji />
+    </div>
+  );
+}
+
+function Emoji() {
+  const [emojiIndex, setEmojiIndex] = useState(0);
+
+  const emojies = ["/emoji_01.svg", "/emoji_02.svg", "/emoji_03.svg"];
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setEmojiIndex((previous) => {
+        return (previous + 1) % 3;
+      });
+    }, 500);
+    return () => clearInterval(intervalId);
+  }, []);
+
+  return (
+    <div className={styles.emojiContainer}>
+      <img
+        className={styles.emojiBackground}
+        src="/emoji_bg.png"
+        alt="Emoji background circle"
+      />
+      <img className={styles.emojie} src={emojies[emojiIndex]} alt="emoji" />
     </div>
   );
 }

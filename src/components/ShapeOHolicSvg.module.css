@@ -1,3 +1,6 @@
+.container {
+  position: relative;
+}
 .shapeContainer {
   position: relative;
   width: 366px;
@@ -6,6 +9,7 @@
 
 .shapeContainer svg {
   position: absolute;
+  scale: 1.2;
 }
 
 .shapeWhite {
@@ -15,14 +19,35 @@
 
 .oHolicContainer {
   position: relative;
+  margin-left: 100px;
 }
 
 .oHolicContainer svg {
   margin-top: 26px;
   position: absolute;
+  scale: 1.2;
 }
 
 .oHolicWhite {
   top: 5px;
   left: 6px;
+}
+
+.emojiContainer {
+  position: absolute;
+  top: 55px;
+  left: -40px;
+}
+
+.emojiContainer .emojie {
+  position: absolute;
+  top: 40px;
+  left: 32px;
+  width: 54px;
+  height: 54px;
+}
+
+.emojiContainer .emojiBackground {
+  width: 127.855px;
+  height: 130.615px;
 }
