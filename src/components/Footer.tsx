@@ -3,7 +3,7 @@ import BottomLogo from "@/components/BottomLogo";
 
 export default function Footer() {
   return (
-    <footer>
+    <footer className={styles.footer}>
       <div className={styles.bLogoLineContainer}>
         <div className={styles.line1} />
         <div className={styles.logoContainer}>
