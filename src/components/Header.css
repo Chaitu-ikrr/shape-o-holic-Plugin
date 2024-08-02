@@ -53,7 +53,7 @@ a {
   color: white;
   font-weight: 500;
 }
-button:hover {
+.header-button:hover {
   cursor: pointer;
   box-shadow:
     2px 2px 4px 0px rgba(185, 97, 255, 0.36) inset,
