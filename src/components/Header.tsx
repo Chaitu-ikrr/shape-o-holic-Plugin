@@ -26,7 +26,7 @@ export default function Header() {
             </g>
           </svg>
         </div>
-        <button>
+        <button className="header-button">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"

@@ -1,5 +1,6 @@
 .container {
   position: relative;
+  margin-left: 60px;
 }
 .shapeContainer {
   position: relative;
@@ -20,6 +21,8 @@
 .oHolicContainer {
   position: relative;
   margin-left: 100px;
+  width: 391px;
+  height: 72px;
 }
 
 .oHolicContainer svg {
