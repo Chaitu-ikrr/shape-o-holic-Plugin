@@ -230,7 +230,11 @@ export default function ShapeOHolicSvg() {
 function Emoji() {
   const [emojiIndex, setEmojiIndex] = useState(0);
 
-  const emojies = ["/emoji_01.svg", "/emoji_02.svg", "/emoji_03.svg"];
+  const emojies = [
+    "/shocked with-sunglasses.png",
+    "/Shocked face.png",
+    "/Face with heart eyes.png",
+  ];
 
   useEffect(() => {
     const intervalId = setInterval(() => {
