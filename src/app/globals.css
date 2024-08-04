@@ -20,6 +20,7 @@ body {
   background-color: var(--background);
   color: white;
   width: 100vw;
+  overflow-x: clip;
 }
 .bg-pattern {
   background-image: url("/background.svg");
