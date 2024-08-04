@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import styles from "./ShapeOHolicSvg.module.css";
 import { motion, Transition } from "framer-motion";
+import Image from "next/image";
 
 const radialGradientTransition: Transition = {
   delay: 0.8,
@@ -230,7 +231,7 @@ export default function ShapeOHolicSvg() {
 function Emoji() {
   const [emojiIndex, setEmojiIndex] = useState(0);
 
-  const emojies = [
+  const emojis = [
     "/shocked with-sunglasses.png",
     "/Shocked face.png",
     "/Face with heart eyes.png",
@@ -247,12 +248,25 @@ function Emoji() {
 
   return (
     <div className={styles.emojiContainer}>
-      <img
+      <Image
         className={styles.emojiBackground}
         src="/emoji_bg.png"
         alt="Emoji background circle"
+        width={128}
+        height={131}
       />
-      <img className={styles.emojie} src={emojies[emojiIndex]} alt="emoji" />
+      {emojis.map((src, index) => {
+        return (
+          <Image
+            width={54}
+            height={54}
+            style={{ display: emojiIndex == index ? "block" : "none" }}
+            className={styles.emoji}
+            src={emojis[emojiIndex]}
+            alt="emoji"
+          />
+        );
+      })}
     </div>
   );
 }
