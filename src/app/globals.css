@@ -14,7 +14,7 @@ button:hover {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-poppins), sans-serif;
 }
 body {
   background-color: var(--background);
