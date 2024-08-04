@@ -27,7 +27,7 @@ body {
   left: 0px;
   top: 0px;
   width: 100vw;
-  height: 1820%;
+  height: 1805%;
   background-size: cover;
   z-index: -2;
   fill: #ffffff;
@@ -52,7 +52,7 @@ body {
 
 .bottom-glow {
   position: absolute;
-  bottom: -350px;
+  bottom: -250px;
   left: 50%;
   transform: translateX(-50%);
   transform-origin: center;
