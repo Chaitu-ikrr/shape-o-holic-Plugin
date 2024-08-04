@@ -2,6 +2,12 @@
   position: relative;
   margin-left: 60px;
 }
+
+@media (max-width: 510px) {
+  .container {
+    scale: 0.7;
+  }
+}
 .shapeContainer {
   position: relative;
   width: 366px;
