@@ -32,7 +32,7 @@ export default function Home() {
       </div>
       <div className={style.shapesContainer}>
         {shapes.map((name) => {
-          return <ShapeCard name={name} type="noise" />;
+          return <ShapeCard key={name} name={name} type="noise" />;
         })}
       </div>
     </main>

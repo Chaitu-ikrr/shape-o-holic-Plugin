@@ -2,6 +2,7 @@
 import { DynamicAnimationOptions, useAnimate } from "framer-motion";
 import styles from "./ShapeCard.module.css";
 import { ButtonHTMLAttributes, DetailedHTMLProps } from "react";
+import Image from "next/image";
 
 const transition: DynamicAnimationOptions = {
   ease: "easeInOut",
@@ -89,10 +90,12 @@ export default function ShapeCard({
       onMouseLeave={onMouseLeave}
       className={styles.shapeCard}
     >
-      <img
+      <Image
         className={styles.image}
         src={`/shapes/${type}/${name}.svg`}
         alt={name}
+        width={176}
+        height={176}
       />
       <div id="on-hover" className={styles.onHover}>
         <svg
