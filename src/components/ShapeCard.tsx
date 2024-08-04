@@ -1,7 +1,7 @@
 "use client";
 import { DynamicAnimationOptions, useAnimate } from "framer-motion";
 import styles from "./ShapeCard.module.css";
-import { ButtonHTMLAttributes, DetailedHTMLProps } from "react";
+import { ButtonHTMLAttributes, DetailedHTMLProps, useState } from "react";
 import Image from "next/image";
 
 const transition: DynamicAnimationOptions = {
@@ -17,6 +17,7 @@ export default function ShapeCard({
   type: "noise" | "solid";
 }) {
   const [scope, animate] = useAnimate();
+  const [copyMessage, setCopyMessage] = useState<string | undefined>();
 
   function onMouseEnter() {
     animate(
@@ -79,6 +80,10 @@ export default function ShapeCard({
         if (!res.ok) throw new Error();
         const image = await res.text();
         await navigator.clipboard.writeText(image);
+        setCopyMessage(`${extension.toUpperCase()} Copied!`);
+        setTimeout(() => {
+          setCopyMessage(undefined);
+        }, 1200);
       } catch (error) {}
     };
   }
@@ -98,6 +103,7 @@ export default function ShapeCard({
         height={176}
       />
       <div id="on-hover" className={styles.onHover}>
+        {copyMessage && <div className={styles.copyMessage}>{copyMessage}</div>}
         <svg
           className={styles.topGlow}
           xmlns="http://www.w3.org/2000/svg"
