@@ -29,6 +29,9 @@ export default function RootLayout({
         <div className="top-glow" />
         <div className="bg-pattern" />
         {children}
+        <div className="bottom-glow-container">
+          <div className="bottom-glow" />
+        </div>
         <Footer />
       </body>
     </html>
