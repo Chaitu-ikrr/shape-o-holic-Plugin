@@ -258,6 +258,7 @@ function Emoji() {
       {emojis.map((src, index) => {
         return (
           <Image
+            key={src}
             width={54}
             height={54}
             style={{ display: emojiIndex == index ? "block" : "none" }}
