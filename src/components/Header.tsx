@@ -21,7 +21,7 @@ export default function Header() {
                 d="M14.3333 2.9C14.7567 2.9 15.1 3.24325 15.1 3.66667V11.6667C15.1 12.0901 14.7567 12.4334 14.3333 12.4334C13.9099 12.4334 13.5667 12.0901 13.5667 11.6667V5.51757L4.20874 14.8754C3.90933 15.1749 3.42397 15.1749 3.12456 14.8754C2.82515 14.576 2.82515 14.0907 3.12456 13.7913L12.4824 4.43334H6.33332C5.90991 4.43334 5.56665 4.09008 5.56665 3.66667C5.56665 3.24325 5.90991 2.9 6.33332 2.9H14.3333Z"
                 fill="white"
                 stroke="white"
-                stroke-width="0.2"
+                strokeWidth="0.2"
               />
             </g>
           </svg>
@@ -35,7 +35,7 @@ export default function Header() {
             fill="none"
           >
             <g filter="url(#filter0_i_4553_16805)">
-              <g clip-path="url(#clip0_4553_16805)">
+              <g clipPath="url(#clip0_4553_16805)">
                 <rect width="24" height="24" rx="12" fill="white" />
                 <path
                   d="M12 0C5.37188 0 0 5.37188 0 12C0 18.6281 5.37188 24 12 24C18.6281 24 24 18.6281 24 12C24 5.37188 18.6281 0 12 0ZM8.64375 17.0203H6.30469V9.53437H8.64375V17.0203ZM7.41094 8.59687H7.39219C6.54375 8.59687 5.99531 8.025 5.99531 7.29844C5.99531 6.55781 6.5625 6 7.425 6C8.2875 6 8.81719 6.55781 8.83594 7.29844C8.84062 8.02031 8.29219 8.59687 7.41094 8.59687ZM18 17.0203H15.3469V13.1484C15.3469 12.1359 14.9344 11.4422 14.0203 11.4422C13.3219 11.4422 12.9328 11.9109 12.7547 12.3609C12.6891 12.5203 12.6984 12.7453 12.6984 12.975V17.0203H10.0688C10.0688 17.0203 10.1016 10.1578 10.0688 9.53437H12.6984V10.7109C12.8531 10.1953 13.6922 9.46406 15.0328 9.46406C16.6969 9.46406 18 10.5422 18 12.8578V17.0203Z"
@@ -51,9 +51,9 @@ export default function Header() {
                 width="26"
                 height="26"
                 filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
               >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feBlend
                   mode="normal"
                   in="SourceGraphic"
@@ -92,8 +92,8 @@ export default function Header() {
                 gradientUnits="userSpaceOnUse"
                 gradientTransform="translate(12 12) rotate(14.0362) scale(18.554)"
               >
-                <stop stop-color="#BC67FF" />
-                <stop offset="1" stop-color="#401868" />
+                <stop stopColor="#BC67FF" />
+                <stop offset="1" stopColor="#401868" />
               </radialGradient>
               <clipPath id="clip0_4553_16805">
                 <rect width="24" height="24" rx="12" fill="white" />

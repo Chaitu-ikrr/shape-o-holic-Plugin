@@ -16,7 +16,7 @@ export default function FigmaIconSvg() {
           rx="18"
           fill="#6725A5"
         />
-        <g clip-path="url(#clip0_4520_18957)">
+        <g clipPath="url(#clip0_4520_18957)">
           <g filter="url(#filter1_d_4520_18957)">
             <path
               d="M19.1875 18.3088C19.1875 16.6976 20.4612 15.3926 22.0312 15.3926C23.6025 15.3926 24.875 16.6963 24.875 18.3088C24.875 19.9201 23.6025 21.2251 22.0312 21.2251C20.4625 21.2251 19.1875 19.9213 19.1875 18.3088Z"
@@ -57,9 +57,9 @@ export default function FigmaIconSvg() {
           width="36"
           height="40"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -122,9 +122,9 @@ export default function FigmaIconSvg() {
           width="9.6875"
           height="9.83252"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -157,9 +157,9 @@ export default function FigmaIconSvg() {
           width="9.6875"
           height="9.83398"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -192,9 +192,9 @@ export default function FigmaIconSvg() {
           width="9.6875"
           height="9.83398"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -227,9 +227,9 @@ export default function FigmaIconSvg() {
           width="9.6875"
           height="9.83398"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -262,9 +262,9 @@ export default function FigmaIconSvg() {
           width="9.6875"
           height="9.83252"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"

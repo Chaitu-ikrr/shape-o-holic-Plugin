@@ -1,0 +1,41 @@
+<svg width="176" height="176" viewBox="0 0 176 176" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_295_35328" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="9" width="176" height="158">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M56.7377 10.1467C48.6768 11.6825 40.8868 16.6406 36.2127 23.2106C34.9384 25.0016 30.4743 34.9583 19.1471 61.2707C10.7105 80.8695 3.30447 98.3507 2.68968 100.118C-0.547946 109.424 -0.869486 119.616 1.76199 129.542C3.02022 134.289 6.66969 141.817 9.6804 145.875C17.1528 155.948 27.8605 162.82 40.389 165.584C43.5548 166.282 46.4371 166.32 96.5283 166.32C146.631 166.32 149.461 166.283 151.882 165.594C160.213 163.221 166.647 158.571 171.12 151.687C174.634 146.28 176.012 141.444 176 134.571C175.991 129.866 175.689 128.036 169.391 94.5459C165.761 75.2437 162.45 58.5793 162.031 57.5136C160.071 52.5177 155.714 47.9331 150.585 45.4685C146.42 43.4672 143.643 42.8973 138.338 42.9553C130.319 43.0429 124.561 45.2661 119.677 50.1611C117.397 52.4455 116.343 53.8953 115.086 56.4783C111.852 63.124 112.035 60.4705 112.035 100.724V136.49L113.197 137.708C116.558 141.234 122.033 139.197 122.053 134.414C122.064 131.76 123.136 127.444 124.463 124.71C126.198 121.138 130.769 116.583 134.318 114.889C145.21 109.692 157.948 113.824 163.447 124.337C169.995 136.855 163.153 152.038 149.333 155.654C145.918 156.548 48.548 156.575 43.4829 155.684C19.5464 151.472 4.60038 126.877 12.1411 104.108C14.2473 97.7481 17.1932 92.8799 21.7064 88.3017C28.7069 81.2 38.0735 76.942 48.0318 76.3346C67.666 75.1372 85.5638 88.8172 89.6502 108.145C89.9486 109.555 90.3168 112.306 90.4684 114.259C90.6203 116.211 90.9768 118.27 91.261 118.835C92.023 120.349 93.7068 121.292 95.6477 121.292C97.6872 121.292 99.1865 120.307 100.171 118.321C100.833 116.984 100.851 114.925 100.513 78.3141C100.168 40.7234 100.136 39.6285 99.3133 36.3636C98.2443 32.1226 95.1903 25.8219 92.7245 22.7704C88.3233 17.3237 80.6888 12.5766 73.3659 10.734C68.918 9.61503 60.998 9.33501 56.7377 10.1467Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_295_35328)">
+<g filter="url(#filter0_f_295_35328)">
+<ellipse cx="121.44" cy="94.5998" rx="78.32" ry="78.76" fill="#D9D7FF"/>
+</g>
+<g filter="url(#filter1_f_295_35328)">
+<ellipse cx="77.4401" cy="3.9602" rx="78.32" ry="78.76" fill="#CC81F4"/>
+</g>
+<g filter="url(#filter2_f_295_35328)">
+<ellipse cx="23.7599" cy="77.0002" rx="78.32" ry="78.76" fill="#F8C3F9"/>
+</g>
+<g filter="url(#filter3_f_295_35328)">
+<ellipse cx="67.7599" cy="181.72" rx="78.32" ry="78.76" fill="#AEA5FF"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_f_295_35328" x="-12.8799" y="-40.1602" width="268.64" height="269.52" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="28" result="effect1_foregroundBlur_295_35328"/>
+</filter>
+<filter id="filter1_f_295_35328" x="-56.8799" y="-130.8" width="268.64" height="269.52" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="28" result="effect1_foregroundBlur_295_35328"/>
+</filter>
+<filter id="filter2_f_295_35328" x="-110.56" y="-57.7598" width="268.64" height="269.52" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="28" result="effect1_foregroundBlur_295_35328"/>
+</filter>
+<filter id="filter3_f_295_35328" x="-66.5601" y="46.96" width="268.64" height="269.52" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="28" result="effect1_foregroundBlur_295_35328"/>
+</filter>
+</defs>
+</svg>

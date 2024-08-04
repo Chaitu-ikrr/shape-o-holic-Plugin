@@ -3,6 +3,7 @@ import style from "./page.module.css";
 import ShapeOHolicSvg from "@/components/ShapeOHolicSvg";
 import FigmaIconSvg from "@/components/FigmaIconSvg";
 import DownloadIconSvg from "@/components/DownloadIconSvg";
+import shapes from "@/data/shapes";
 
 export default function Home() {
   return (
@@ -30,7 +31,9 @@ export default function Home() {
         </button>
       </div>
       <div className={style.shapesContainer}>
-        <ShapeCard />
+        {shapes.map((name) => {
+          return <ShapeCard name={name} type="noise" />;
+        })}
       </div>
     </main>
   );
