@@ -112,3 +112,21 @@
   font-weight: 500;
   letter-spacing: 0.56px;
 }
+
+.loader {
+  flex-shrink: 0;
+  animation-name: spin;
+  animation-duration: 1200ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(-360deg);
+  }
+}
