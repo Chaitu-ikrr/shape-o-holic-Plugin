@@ -37,6 +37,7 @@ body {
 }
 .bottom-glow-container {
   position: relative;
+  z-index: -1;
 }
 
 .bottom-glow {

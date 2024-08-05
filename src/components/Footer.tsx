@@ -16,11 +16,32 @@ export default function Footer() {
       <div className={styles.credits}>
         <div>
           Designed by{" "}
-          <span className={styles.creditsName}>Chaitanya Sai & Sarda Rani</span>
+          <a
+            href="https://www.linkedin.com/in/chaitanyasai-g/"
+            target="_blank"
+            className={styles.creditsName}
+          >
+            Chaitanya Sai
+          </a>
+          <span> & </span>
+          <a
+            href="https://www.linkedin.com/in/kumari-sarda-rani"
+            target="_blank"
+            className={styles.creditsName}
+          >
+            Sarda Rani
+          </a>
         </div>
         <div className={styles.creditsSeperator} />
         <div>
-          Developed by <span className={styles.creditsName}>Raghav Pandit</span>
+          Developed by{" "}
+          <a
+            href="https://linkedin.com/in/raghav-pandit"
+            target="_blank"
+            className={styles.creditsName}
+          >
+            Raghav Pandit
+          </a>
         </div>
       </div>
     </footer>
