@@ -13,6 +13,16 @@ export default function Footer() {
         </div>
         <div className={styles.line2} />
       </div>
+      <div className={styles.credits}>
+        <div>
+          Designed by{" "}
+          <span className={styles.creditsName}>Chaitanya Sai & Sarda Rani</span>
+        </div>
+        <div className={styles.creditsSeperator} />
+        <div>
+          Developed by <span className={styles.creditsName}>Raghav Pandit</span>
+        </div>
+      </div>
     </footer>
   );
 }
