@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import BackgroundPattern from "@/components/BackgroundPattern";
 
 const poppins = Poppins({
   weight: ["400", "500", "600", "700"],
@@ -27,7 +28,7 @@ export default function RootLayout({
       <body>
         <Header />
         <div className="top-glow" />
-        <div className="bg-pattern" />
+        <BackgroundPattern />
         {children}
         <div className="bottom-glow-container">
           <div className="bottom-glow" />

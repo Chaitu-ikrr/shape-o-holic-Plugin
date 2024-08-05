@@ -22,22 +22,6 @@ body {
   width: 100vw;
   overflow-x: clip;
 }
-.bg-pattern {
-  background-image: url("/background.svg");
-  position: absolute;
-  background-size: 100vh;
-  background-repeat: repeat;
-  left: 0px;
-  top: 0px;
-  width: 100vw;
-  height: 1805%;
-  background-size: cover;
-  z-index: -2;
-  fill: #ffffff;
-  opacity: 0.56;
-  mix-blend-mode: soft-light;
-  background-color: var(--background);
-}
 .top-glow {
   position: absolute;
   top: -250px;
