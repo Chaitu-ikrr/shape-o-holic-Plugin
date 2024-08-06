@@ -93,8 +93,16 @@ export default function ShapeCard({
         extension == "png" ? setCopyPNGLoading(true) : setCopySVGLoading(true);
         const res = await fetch(`/shapes/${type}/${name}.${extension}`);
         if (!res.ok) throw new Error();
-        const image = await res.text();
-        await navigator.clipboard.writeText(image);
+        if (extension == "svg") {
+          const image = await res.text();
+          await navigator.clipboard.writeText(image);
+        } else {
+          const image = await res.blob();
+          const mimeType = "image/png";
+          const blob = new Blob([image], { type: mimeType });
+          const data = [new ClipboardItem({ [mimeType]: blob })];
+          await navigator.clipboard.write(data);
+        }
         extension == "png"
           ? setCopyPNGLoading(false)
           : setCopySVGLoading(false);
