@@ -6,10 +6,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background: rgba(75, 20, 124, 0.15);
 
   border-radius: 24px;
   border: 1px solid rgba(171, 78, 255, 0.26);
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(2px);
 }
 .shapeCard:hover {
   border: 1px #ab4eff;
