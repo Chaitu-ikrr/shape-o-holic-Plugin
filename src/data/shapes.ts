@@ -31,6 +31,7 @@ const shapes = [
   "Tornado~Flower",
   "poppy",
   "Tulip",
+  "Rose",
   "Futon~ Shuriken",
   "Four-Point Shuriken",
   "Four-Bladed Rotational Shuriken",
@@ -107,7 +108,7 @@ const shapes = [
   "moon walker",
   "Sun mount",
   "Sunriser",
-  "Sun shore", // Not found
+  "Sun shore",
   "palm",
   "growth tree",
   "namaskaram",
