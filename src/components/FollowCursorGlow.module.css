@@ -1,0 +1,9 @@
+.glow {
+  position: absolute;
+  /*width: 80px;*/
+  /*height: 80px;*/
+  left: -100;
+  top: -100;
+  transform: translate(-55%, -65%);
+  transition: 0ms ease all;
+}
