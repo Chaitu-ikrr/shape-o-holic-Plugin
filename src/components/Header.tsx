@@ -1,5 +1,7 @@
+"use client";
 import "./Header.css";
 import TopLogo from "@/components/TopLogo";
+import { LinkedinShareButton } from "react-share";
 
 export default function Header() {
   return (
@@ -26,7 +28,13 @@ export default function Header() {
             </g>
           </svg>
         </div>
-        <button className="header-button">
+        <LinkedinShareButton
+          title="Your design game changer is here! 💥 Discover 140+ stunning, customizable shapes for FREE. Don't miss out! [Website Link] By- @Design Duh!"
+          summary="Your design game changer is here! 💥 Discover 140+ stunning, customizable shapes for FREE. Don't miss out! [Website Link] By- @Design Duh!"
+          style={{ padding: "8px 16px", border: "1px solid #bc67ff" }}
+          url="https://shape-o-holic.vercel.app/"
+          className="header-button"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -101,7 +109,7 @@ export default function Header() {
             </defs>
           </svg>
           <span>Post</span>
-        </button>
+        </LinkedinShareButton>
       </div>
     </nav>
   );
