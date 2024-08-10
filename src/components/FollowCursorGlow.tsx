@@ -9,7 +9,6 @@ export default function FollowCursorGlow() {
       const { screenX, screenY } = ev;
       const { current } = svgRef;
       if (current) {
-        console.log("Scroll:- ", window.scrollY);
         current.style.top = `${screenY + window.scrollY}px`;
         current.style.left = `${screenX + window.scrollX}px`;
       }
