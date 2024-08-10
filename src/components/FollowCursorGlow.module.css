@@ -5,6 +5,42 @@
   /*height: 80px;*/
   left: -100;
   top: -100;
-  transform: translate(-55%, -65%);
+  transform: translate(-65%, -140%);
   transition: 0ms ease-in-out all;
+  width: 100px;
+  height: 100px;
+}
+
+.outerCircle {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 100px;
+  background: linear-gradient(
+    90deg,
+    rgba(204, 129, 244, 0.8) 0%,
+    rgba(248, 195, 249, 0.8) 33%,
+    rgba(214, 181, 252, 0.8) 60%,
+    rgba(174, 165, 255, 0.8) 100%
+  );
+  filter: blur(120px);
+}
+
+.innerCircle {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  border-radius: 100px;
+  background: linear-gradient(
+    90deg,
+    rgba(204, 129, 244, 0.8) 0%,
+    rgba(248, 195, 249, 0.8) 33%,
+    rgba(214, 181, 252, 0.8) 60%,
+    rgba(174, 165, 255, 0.8) 100%
+  );
+  filter: blur(120px);
 }
