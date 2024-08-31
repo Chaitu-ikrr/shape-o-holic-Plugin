@@ -24,11 +24,24 @@ export default function Home() {
         </div>
       </div>
       <div className={style.buttonContainer}>
-        <button className={style.figmaButton}>
+        <button
+          onClick={() => {
+            window.open(
+              "https://www.figma.com/design/VrAjS980usamCpblOhGMlj/Shape-O-Holic?node-id=25-142&t=citd8ogFwCfTBBTz-1",
+              "_blank",
+            );
+          }}
+          className={style.figmaButton}
+        >
           <FigmaIconSvg />
           Figma file
         </button>
-        <button className={style.downloadButton}>
+        <button
+          onClick={() =>
+            window.open("https://designhub3.gumroad.com/l/yfmivf", "_blank")
+          }
+          className={style.downloadButton}
+        >
           <DownloadIconSvg />
           Download all
         </button>

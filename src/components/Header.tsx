@@ -9,7 +9,9 @@ export default function Header() {
       <TopLogo className="animate" />
       <div className="right">
         <div className="join-us">
-          <a href="">Join us</a>
+          <a href="https://forms.gle/GpbYPwA9dR5n3tgV9" target="_blank">
+            Join us
+          </a>
           <svg
             width="18"
             height="18"
