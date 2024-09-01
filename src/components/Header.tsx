@@ -1,12 +1,12 @@
 "use client";
 import "./Header.css";
-import TopLogo from "@/components/TopLogo";
+import TopLogo from "@/components/LottieTopLogo";
 import { LinkedinShareButton } from "react-share";
 
 export default function Header() {
   return (
     <nav>
-      <TopLogo className="animate" />
+      <TopLogo />
       <div className="right">
         <div className="join-us">
           <a href="https://forms.gle/GpbYPwA9dR5n3tgV9" target="_blank">

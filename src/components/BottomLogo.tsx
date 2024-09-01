@@ -260,7 +260,7 @@ export default function BottomLogo() {
       </svg>
       <svg
         style={{ width: "100%", height: "100%" }}
-        className="svg-mask"
+        className={styles.svgMask}
         width="200"
         height="200"
         viewBox="0 0 200 200"
