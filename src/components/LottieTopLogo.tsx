@@ -8,7 +8,7 @@ export default function TopLogo() {
   return (
     <Lottie
       animationData={topLogoAnimation}
-      style={{ width: 40, height: 40 }}
+      style={{ width: 50, height: 50 }}
     />
   );
 }

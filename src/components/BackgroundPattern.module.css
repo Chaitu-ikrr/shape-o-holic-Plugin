@@ -10,7 +10,7 @@
   background-size: cover;
   z-index: -4;
   fill: #ffffff;
-  opacity: 0.26;
+  opacity: 0.32;
   mix-blend-mode: soft-light;
   background-color: var(--background);
 }
