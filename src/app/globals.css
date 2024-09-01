@@ -26,6 +26,7 @@ body {
   position: absolute;
   top: -250px;
   left: 50%;
+  z-index: -1;
   transform: translateX(-50%);
   transform-origin: center;
   width: 100vw;
