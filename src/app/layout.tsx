@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BackgroundPattern from "@/components/BackgroundPattern";
 import FollowCursorGlow from "@/components/FollowCursorGlow";
+import { Analytics } from "@vercel/analytics/react";
 
 const poppins = Poppins({
   weight: ["400", "500", "600", "700"],
@@ -36,6 +37,7 @@ export default function RootLayout({
           <div className="bottom-glow" />
         </div>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
