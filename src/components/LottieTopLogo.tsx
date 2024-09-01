@@ -6,9 +6,11 @@ const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 export default function TopLogo() {
   return (
-    <Lottie
-      animationData={topLogoAnimation}
-      style={{ width: 50, height: 50 }}
-    />
+    <div style={{ width: 50, height: 50 }}>
+      <Lottie
+        animationData={topLogoAnimation}
+        style={{ width: 50, height: 50 }}
+      />
+    </div>
   );
 }
