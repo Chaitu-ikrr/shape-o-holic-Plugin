@@ -281,7 +281,7 @@ function CopyButton(
           <path
             d="M4 10H10M10 10H16M10 10V16M10 10V4"
             stroke="white"
-            strokeWidth="1.5"
+            strokeWidth="1.8"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
