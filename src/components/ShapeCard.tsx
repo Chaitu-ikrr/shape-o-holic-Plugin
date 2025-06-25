@@ -93,24 +93,45 @@ export default function ShapeCard({
         extension == "png" ? setCopyPNGLoading(true) : setCopySVGLoading(true);
         const res = await fetch(`/shapes/${type}/${name}.${extension}`);
         if (!res.ok) throw new Error();
-        if (extension == "svg") {
-          const image = await res.text();
-          await navigator.clipboard.writeText(image);
+
+        if (extension === "svg") {
+          const svgContent = await res.text();
+          window.parent.postMessage(
+            {
+              pluginMessage: {
+                type: "create-shape-from-svg",
+                svgContent,
+                shapeName: name,
+              },
+            },
+            "*"
+          );
         } else {
-          const image = await res.blob();
-          const mimeType = "image/png";
-          const blob = new Blob([image], { type: mimeType });
-          const data = [new ClipboardItem({ [mimeType]: blob })];
-          await navigator.clipboard.write(data);
+          const blob = await res.blob();
+          const reader = new FileReader();
+          reader.onloadend = () => {
+            const base64 = (reader.result as string).split(",")[1];
+            window.parent.postMessage(
+              {
+                pluginMessage: {
+                  type: "create-shape-from-image",
+                  imageData: base64,
+                  shapeName: name,
+                },
+              },
+              "*"
+            );
+          };
+          reader.readAsDataURL(blob);
         }
-        extension == "png"
-          ? setCopyPNGLoading(false)
-          : setCopySVGLoading(false);
-        setCopyMessage(`${extension.toUpperCase()} Copied!`);
+
+        setCopyMessage("Pasted to Figma ✨");
         setTimeout(() => {
           setCopyMessage(undefined);
         }, 1200);
       } catch (error) {
+        console.error("Copy failed", error);
+      } finally {
         extension == "png"
           ? setCopyPNGLoading(false)
           : setCopySVGLoading(false);
