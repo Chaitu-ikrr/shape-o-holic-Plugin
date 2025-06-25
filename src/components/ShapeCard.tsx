@@ -87,22 +87,72 @@ export default function ShapeCard({
       }
     };
   }
+  
   function handleCopy(extension: "png" | "svg") {
     return async () => {
       try {
-        extension == "png" ? setCopyPNGLoading(true) : setCopySVGLoading(true);
+        extension === "png" ? setCopyPNGLoading(true) : setCopySVGLoading(true);
         const res = await fetch(`/shapes/${type}/${name}.${extension}`);
-        if (!res.ok) throw new Error();
-        if (extension == "svg") {
-          const image = await res.text();
-          await navigator.clipboard.writeText(image);
+        if (!res.ok) throw new Error("Failed to fetch shape");
+
+        console.log("🔥 Copy button clicked");
+
+        if (extension === "svg") {
+          const svgContent = await res.text();
+          console.log("✉️ Sending SVG to Figma:", svgContent.slice(0, 100));
+
+          if (typeof window !== "undefined" && window.parent !== window) {
+            window.parent.postMessage(
+              {
+                pluginMessage: {
+                  type: "create-shape-from-svg",
+                  svgContent,
+                  shapeName: name,
+                },
+              },
+              "*"
+            );
+          } else {
+            await navigator.clipboard.writeText(svgContent);
+          }
         } else {
-          const image = await res.blob();
-          const mimeType = "image/png";
-          const blob = new Blob([image], { type: mimeType });
-          const data = [new ClipboardItem({ [mimeType]: blob })];
-          await navigator.clipboard.write(data);
+          const blob = await res.blob();
+
+          if (typeof window !== "undefined" && window.parent !== window) {
+            const reader = new FileReader();
+            reader.onloadend = () => {
+              const base64 = (reader.result as string).split(",")[1];
+              console.log("✉️ Sending PNG to Figma:", base64.slice(0, 100));
+              window.parent.postMessage(
+                {
+                  pluginMessage: {
+                    type: "create-shape-from-image",
+                    imageData: base64,
+                    shapeName: name,
+                  },
+                },
+                "*"
+              );
+            };
+            reader.readAsDataURL(blob);
+          } else {
+            const mimeType = "image/png";
+            const clipboardBlob = new Blob([blob], { type: mimeType });
+            const data = [new ClipboardItem({ [mimeType]: clipboardBlob })];
+            await navigator.clipboard.write(data);
+          }
         }
+
+        setCopyMessage("Pasted to Figma ✨");
+        setTimeout(() => setCopyMessage(undefined), 1200);
+      } catch (error) {
+        console.error("❌ Copy failed", error);
+      } finally {
+        extension === "png" ? setCopyPNGLoading(false) : setCopySVGLoading(false);
+      }
+    };
+  }
+
         extension == "png"
           ? setCopyPNGLoading(false)
           : setCopySVGLoading(false);
